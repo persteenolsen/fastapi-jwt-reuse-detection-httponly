@@ -373,7 +373,7 @@ Apply migration:
 
 A companion Vue 3 frontend is available:
 
-https://github.com/persteenolsen/vue-fastapi-jwt-reuse-detection-auth-client
+https://github.com/persteenolsen/vue-fastapi-jwt-reuse-detection-httponly-client
 
 Features:
 

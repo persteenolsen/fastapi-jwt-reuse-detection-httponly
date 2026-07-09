@@ -47,8 +47,8 @@ def set_auth_cookies(
         httponly=True,
 
         # For testing locally
-        # secure=False,
-        # samesite="lax",
+        #secure=False,
+        #samesite="lax",
 
         # For production
         secure=True,
@@ -64,8 +64,8 @@ def set_auth_cookies(
         httponly=True,
 
         # For testing locally
-        # secure=False,
-        # samesite="lax",
+        #secure=False,
+        #samesite="lax",
         
         # For production
         secure=True,
@@ -82,8 +82,8 @@ def clear_auth_cookies(response: Response):
         ACCESS_COOKIE_NAME,
         
         # For testing locally
-        # secure=False,
-        # samesite="lax",
+        #secure=False,
+        #samesite="lax",
 
         # For production
         secure=True,
@@ -96,8 +96,8 @@ def clear_auth_cookies(response: Response):
         REFRESH_COOKIE_NAME,
 
         # For testing locally
-        # secure=False,
-        # samesite="lax",
+        #secure=False,
+        #samesite="lax",
         
         # For production
         secure=True,
