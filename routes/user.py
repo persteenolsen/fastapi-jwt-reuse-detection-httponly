@@ -52,8 +52,8 @@ def set_auth_cookies(
         # samesite="lax",
 
         # For production
-        # secure=True,
-        # samesite="none",
+        secure=True,
+        samesite="none",
 
         max_age=15 * 60
     )
