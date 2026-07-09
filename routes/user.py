@@ -80,11 +80,29 @@ def clear_auth_cookies(response: Response):
 
     response.delete_cookie(
         ACCESS_COOKIE_NAME,
+        
+        # For testing locally
+        # secure=False,
+        # samesite="lax",
+
+        # For production
+        secure=True,
+        samesite="none",
+
         path="/"
     )
 
     response.delete_cookie(
         REFRESH_COOKIE_NAME,
+
+        # For testing locally
+        # secure=False,
+        # samesite="lax",
+        
+        # For production
+        secure=True,
+        samesite="none",
+
         path="/"
     )
 
