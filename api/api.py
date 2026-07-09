@@ -34,7 +34,7 @@ app = FastAPI(
 origins = [
 
     # Not sure if this is needed, but adding just in case
-    "https://fastapi-jwt-reuse-detection-httponly.vercel.app",
+    "https://fastapi-jwt-reuse-detection-httponl.vercel.app",
 
     # The domain name of the Vue 3 SPA Client
     "https://vue.fastapi.jwt.reuse.detection.httponly.persteenolsen.com",
