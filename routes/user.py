@@ -48,12 +48,12 @@ def set_auth_cookies(
         httponly=True,
 
         # For testing locally
-        secure=False,
-        samesite="lax",
+        # secure=False,
+        # samesite="lax",
 
         # For production
-        # secure=True
-        # samesite="none"
+        # secure=True,
+        # samesite="none",
 
         max_age=15 * 60
     )
@@ -64,12 +64,12 @@ def set_auth_cookies(
         httponly=True,
 
         # For testing locally
-        secure=False,
-        samesite="lax",
+        # secure=False,
+        # samesite="lax",
         
         # For production
-        # secure=True
-        # samesite="none"
+        secure=True,
+        samesite="none",
 
         max_age=7 * 24 * 60 * 60
     )
