@@ -35,7 +35,6 @@ router_auth = APIRouter()
 ACCESS_COOKIE_NAME = "access_token"
 REFRESH_COOKIE_NAME = "refresh_token"
 
-
 def set_auth_cookies(
     response: Response,
     access_token: str,
@@ -55,7 +54,8 @@ def set_auth_cookies(
         secure=True,
         samesite="none",
 
-        max_age=15 * 60
+        max_age=15 * 60,
+        path="/"
     )
 
     response.set_cookie(
@@ -71,7 +71,8 @@ def set_auth_cookies(
         secure=True,
         samesite="none",
 
-        max_age=7 * 24 * 60 * 60
+        max_age=7 * 24 * 60 * 60,
+        path="/"
     )
 
 
@@ -79,29 +80,13 @@ def clear_auth_cookies(response: Response):
 
     response.delete_cookie(
         ACCESS_COOKIE_NAME,
-        
-        httponly=True,
-        # For testing locally
-        # secure=False,
-        # samesite="lax",
-        
-        # For production
-        secure=True,
-        samesite="none"
+        path="/"
     )
 
     response.delete_cookie(
         REFRESH_COOKIE_NAME,
-         httponly=True,
-        # For testing locally
-        # secure=False,
-        # samesite="lax",
-        
-        # For production
-        secure=True,
-        samesite="none"
+        path="/"
     )
-
 
 # =====================================================
 # Admin
