@@ -21,7 +21,7 @@ from routes.simple import router_simple as router_simple_one
 app = FastAPI(
 
     title="Python + FastApi + PostgreSQL + Alembic + Auth by JWT with Revoked Token Reuse Detection and HttpOnly secure cookie",
-    description="09-07-2026 - FastAPI serving Authentication by JWT with Refresh Token Rotation and Revoked Token Reuse Detection and HttpOnly secure cookie using these credentials: testuser / admin",
+    description="10-07-2026 - FastAPI serving Authentication by JWT with Refresh Token Rotation and Revoked Token Reuse Detection and HttpOnly secure cookie using these credentials: testuser / admin",
     version="0.0.2",
 
     contact={
