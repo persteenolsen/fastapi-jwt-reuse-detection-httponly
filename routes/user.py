@@ -49,7 +49,9 @@ def set_auth_cookies(response: Response, access_token: str, refresh_token: str):
         # For production
         secure=True,
         samesite="none",
-
+        
+        # 12-07-2026 - Must match the value in .env !
+        # ACCESS_TOKEN_EXPIRE_MINUTES=15
         max_age=15 * 60,
         path="/",
     )
@@ -66,7 +68,10 @@ def set_auth_cookies(response: Response, access_token: str, refresh_token: str):
         # For production
         secure=True,
         samesite="none",
-
+        
+        # 12-07-2026 - Must match the values in .env!
+        # REFRESH_TOKEN_EXPIRE_MINUTES=10080
+        # Note: Could be changed to 7 days instead of minuttes :-)
         max_age=7 * 24 * 60 * 60,
         path="/",
     )
