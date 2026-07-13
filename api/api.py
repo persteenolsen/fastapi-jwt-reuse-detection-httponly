@@ -19,10 +19,10 @@ from routes.simple import router_simple as router_simple_one
 
 # Initialize the FastAPI app
 app = FastAPI(
-    title="FastAPI Authentication Using JWT, Refresh Token Rotation, Revoked Token Reuse Detection, and HttpOnly Cookies",
+    title="FastAPI Authentication Using JWT, Refresh Token Rotation, Refresh Token Reuse Detection, and HttpOnly Cookies",
     description=(
         "13-07-2026 - FastAPI authentication service using JWT, Refresh Token Rotation, "
-        "Revoked Token Reuse Detection, and HttpOnly cookies with PostgreSQL "
+        "Refresh Token Reuse Detection, and HttpOnly cookies with PostgreSQL "
         "for data persistence and Alembic for database migrations. "
         "Demo credentials: testuser / admin."
     ),
