@@ -24,7 +24,7 @@ app = FastAPI(
         "06-08-2026 - FastAPI authentication service using JWT, Refresh Token Rotation, "
         "Refresh Token Reuse Detection, and HttpOnly cookies with PostgreSQL "
         "for data persistence and Alembic for database migrations. "
-        "Demo credentials: testuser / admin."
+        "Demo credentials: testuser / admin"
     ),
     version="0.0.2",
     contact={
