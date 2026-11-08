@@ -19,7 +19,7 @@ The project uses:
 
 This project was built to explore modern backend architecture, authentication security patterns, database design, token lifecycle management, browser security, and integration testing using Python.
 
-**Last updated:** 21-09-2026
+**Last updated:** 08-11-2026
 
 ---
 
